@@ -121,5 +121,5 @@ Here's a [link to my video result](./white.mp4)
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Currently thresholding is still a major challenge.  I've tried different parameters but shadows and shading changes in the road such as different asphalt gradients causes the thresholding to saturate.  Addtional windowing and use of different filters can help reduce the noise.
+Currently thresholding is still a major challenge.  I've tried different parameters but shadows and shading changes in the road such as different asphalt gradients causes the thresholding to saturate.  Addtional windowing and use of different filters can help reduce the noise.  I compensated for differences in polygon between frames, it worked relatively well.  More correction would help smooth out any transitional difference between frames.
 
